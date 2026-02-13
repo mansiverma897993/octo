@@ -1,0 +1,10 @@
+{
+  "name": "mobile-dev-control",
+  "private": true,
+  "version": "3.0.0",
+  "workspaces": ["backend", "local-agent", "web"],
+  "scripts": {
+    "test": "npm run test -w backend && npm run test -w local-agent && npm run test -w web",
+    "lint": "npm run lint -w backend"
+  }
+}
